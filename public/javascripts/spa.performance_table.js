@@ -49,8 +49,8 @@ spa.performanceTable = (function () {
   onConversationCreated = function(data){
     spa.sound.playSound('zap');
     jqueryMap.$conversationList.prepend(configMap.main_html(
-      {'conversationName' : data.conversationName,
-       'conversationID'   : data.conversationID
+      {'performancePage'  : data.performancePage,
+       'performanceID'    : data.performanceID
       }
     ));
   };

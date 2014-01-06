@@ -39,7 +39,6 @@ app.configure( function () {
   app.use(express.favicon());
   app.use(express.logger('dev'));
   app.use(express.session({ secret: 'esoognom'}));
-  app.use(mongooseAuth.middleware());
 
   var config = {
     watchDir : path.join(__dirname, 'public'),
@@ -65,7 +64,6 @@ app.configure( 'production', function () {
 });
 
 routes.configRoutes( app, server ); // your main routes
-mongooseAuth.helpExpress( app ); // dynamic view helpers such as loggedIn
 
 // -------------- END SERVER CONFIGURATION ----------------
 

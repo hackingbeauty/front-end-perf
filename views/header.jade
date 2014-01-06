@@ -11,10 +11,10 @@ header
             span 
         .navbar-collapse.collapse
           ul.nav.navbar-nav.navbar-right
-            if everyauth.user
+            
               li.dropdown
                 a.dropdown-toggle(href='#', data-toggle='dropdown')
-                  | Your Account
+                  | Menu
                   b.caret
                 ul.dropdown-menu
                   li
@@ -29,8 +29,3 @@ header
                     a(href='#') Separated link
                   li
                     a(href='#') One more separated link
-              li
-                a.signout.button.radius(href='/logout') Sign Out
-            else
-              li
-                a(href='/auth/facebook') Sign in with facebook
