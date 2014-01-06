@@ -32,7 +32,7 @@
 
 * use curl to test api calls
 
-	curl http://localhost:3000/user/create -d {} (the -d option is for a post...ur passing a blank object as post data)
+	curl http://localhost:3000/performance/create -d {} (the -d option is for a post...ur passing a blank object as post data)
 
 
 * to run all tests:
