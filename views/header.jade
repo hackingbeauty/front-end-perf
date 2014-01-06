@@ -1,0 +1,36 @@
+header
+    .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a#logo.navbar-brand(href='#')
+            h1 Front-End-Perf - Front End Performance Dashboard
+            span 
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            if everyauth.user
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | Your Account
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another action
+                  li
+                    a(href='#') Something else here
+                  li.divider
+                  li.dropdown-header Nav header
+                  li
+                    a(href='#') Separated link
+                  li
+                    a(href='#') One more separated link
+              li
+                a.signout.button.radius(href='/logout') Sign Out
+            else
+              li
+                a(href='/auth/facebook') Sign in with facebook

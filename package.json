@@ -1,0 +1,40 @@
+{
+  "name": "chat-salon",
+  "version": "0.0.1-32",
+  "private": true,
+  "scripts": {
+    "test": "./bin/test",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.0",
+    "jade": "*",
+    "stylus": "*",
+    "socket.io": "latest",
+    "redis": "latest",
+    "redis-url": "0.1.0",
+    "passport": "~0.1.17",
+    "passport-twitter": "~1.0.2",
+    "mongoose": "~3.6.20",
+    "connect-mongo": "~0.3.3",
+    "passport-facebook": "~1.0.2",
+    "mongoose-findorcreate": "~0.1.2",
+    "mongodb": "~1.3.19",
+    "JSV": "4.0.x",
+    "express-livereload": "0.0.24",
+    "mongoose-auth": "https://github.com/hackingbeauty/mongoose-auth/tarball/master",
+    "crypto": "0.0.3",
+    "blueimp-md5": "~1.1.0"
+  },
+  "devDependencies": {
+    "node-dev": "~2.0.2",
+    "mocha": "~1.13.0",
+    "request": "~2.27.0",
+    "superagent": "~0.15.7",
+    "libxmljs": "~0.8.1"
+  },
+  "subdomain": "chat-salon",
+  "engines": {
+    "node": "0.10.x"
+  }
+}

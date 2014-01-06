@@ -1,0 +1,59 @@
+!!! 5
+
+html
+  head
+    //
+       ie9+ rendering support for latest standards 
+    meta(http-equiv='Content-Type', content='text/html; charset=ISO-8859-1')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= title
+    //
+       third-party stylesheets 
+    //
+       our stylesheets 
+    link(rel='stylesheet', href='/stylesheets/vendor/bootstrap.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap_overrides.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/style.css', type='text/css')
+
+
+    //
+       third-party javascript 
+    script(src='/socket.io/socket.io.js')
+    script(src='/javascripts/jq/taffydb-2.6.2.js')
+    script(src='/javascripts/jq/jquery-1.9.1.js')
+    script(src='/javascripts/jq/jquery.uriAnchor-1.1.3.js')
+    script(src='/javascripts/jq/jquery.event.gevent-0.1.9.js')
+    script(src='/javascripts/jq/jquery.event.ue-0.3.2.js')
+    script(src='/javascripts/jq/handlebars-1.1.2.js')
+    script(src='/javascripts/jq/bootstrap.js')
+
+
+  body
+    .container
+      include header
+
+      block content
+
+      include footer
+
+  //
+    Handlebar templates
+  include templates/conversation-form
+  include templates/spa-performance-item-module
+  include templates/spa-sidebar-module
+
+
+  //
+     our javascript 
+  script(src='/javascripts/spa.js')
+  script(src='/javascripts/spa.util.js')
+  script(src='/javascripts/spa.data.js')
+  script(src='/javascripts/spa.fake.js')
+  script(src='/javascripts/spa.model.js')
+  script(src='/javascripts/spa.util_b.js')
+  script(src='/javascripts/spa.shell.js')
+  script(src='/javascripts/spa.sound.js')
+  script(src='/javascripts/spa.sidebar.js')
+  script(src='/javascripts/spa.performance_table.js')
+  script(src='/javascripts/spa.sidebar.js')

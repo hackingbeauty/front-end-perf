@@ -1,0 +1,28 @@
+script#spa-sidebar-module(type='text/x-handlebars-template')
+  .module
+    .panel.panel-default
+      .panel-body
+        if everyauth.user
+          a(href='#')
+            img(src='https://graph.facebook.com/#{everyauth.user.fb.name.first}.#{everyauth.user.fb.name.last}/picture?type=normal')
+        .section-container.vertical-nav(data-section='data-section', data-options='deep_linking: false; one_up: true')
+          p Performance Recordings:
+          ul
+            li
+              h5.title
+                a(href='#') January 5, 2014
+            li
+              h5.title
+                a(href='#') January 6, 2014
+            li
+              h5.title
+                a(href='#') January 12, 2014
+            li
+              h5.title
+                a(href='#') January 14, 2014
+            li
+              h5.title
+                a(href='#') February 9, 2014
+            li
+              h5.title
+                a(href='#') February, 14, 2014

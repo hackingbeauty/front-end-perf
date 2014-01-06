@@ -1,0 +1,12 @@
+ul#spa-performance-list {
+  border: 1px solid #ddd;
+}
+ul#spa-performance-list li.spa-performance-item ul.spa-performance-user-data li {
+  padding-top: 6px;
+}
+ul#spa-performance-list li.spa-performance-item ul.spa-performance-user-data li.image {
+  padding-top: 0 !important;
+}
+ul#spa-performance-list li.spa-performance-item:nth-child(odd) {
+  background: #ddd;
+}
